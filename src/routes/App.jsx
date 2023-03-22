@@ -8,7 +8,7 @@ import Register from "../pages/Register";
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route>
           <Route exact path="/" element={<Home />} />
